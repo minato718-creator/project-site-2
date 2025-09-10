@@ -1,0 +1,294 @@
+/* リセットCSS */
+* {
+ margin: 0;
+ padding: 0;
+ }
+ li {
+    list-style-type: none;
+  }
+
+  table {
+    border-collapse: collapse; 
+    border-spacing: 0; 
+   }
+
+img {
+  display: block; 
+}
+ a {
+    text-decoration: none;
+    color: #522707;
+ }
+
+ p {
+    text-decoration: none;
+    color: #522707;
+  }
+
+ body {
+   font-family: "LXGW Marker Gothic", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "MS Pゴシック", "MS PGothic", sans-serif;
+   color: #522707;
+ }
+
+.lxgw-marker-gothic-regular {
+  font-family: "LXGW Marker Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* お好みで */
+  margin: 0 auto;
+  padding: 20px 40px;
+}  
+
+.logo img {
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+#hamburger {
+  display: none;
+}
+
+#gNav {
+ clear: both; 
+}
+
+#gNav ul {
+  /* list-style: none; */
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+#gNav li {
+  float: left;
+}
+
+#gNav li a{
+  font-size: 24px;
+}
+
+#gNav ul li:nth-child(3) {
+  background-color: #f7f4e6;
+  border-radius: 10px;
+}
+
+
+.slideshow {
+  width: 100%; /* 必要なら固定幅に */
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  width: fit-content;         /* 中のスライド幅に合わせる */
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 50%; /* 1枚 = 20%、2枚表示したいなら20%×2 = 40%画面幅 */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+#mainH2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7); /* 半透明の白土台 */
+  padding: 20px 30px;
+  border-radius: 10px;
+  z-index: 10;
+  text-align: center;
+}
+
+#mainH2 h2 {
+  font-size: 1.8rem;
+  color: #522707;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+.mobile-br {
+  display: inline;
+}
+
+.introduction {
+  text-align: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 100px auto;
+  background-color: #f7f4e6;
+  }
+
+  .introduction h2 {
+    font-size: inherit;
+    font-weight: normal;
+    margin: 0;
+}
+
+.introPhoto ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 72px;
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+.introPhoto ul li {
+  flex: 0 0 auto;
+}
+
+.introPhoto img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+#leftP {
+  object-position: center 10%;
+}
+
+#centerP {
+   object-position: center 1px;
+}
+
+#rightP {
+   object-position: 10% 20%;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #FFB351;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #3e1e00;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.button:active {
+  transform: translate(4px, 4px);
+  box-shadow: none; /* 影をなくして押し込まれた感じに */
+}
+
+#footer {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#footerNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#footerNav ul li:nth-child(7) {
+  background-color: #f7f4e6;
+  border-radius: 10px;
+}
+
+#footerLogo img {
+  display: block;
+  margin: 20px auto 0;
+  width: auto;
+  height: auto;
+}
+
+
+/* コンタクトページで使用のCSS */
+
+#contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 10px;
+} 
+
+#yoyaku {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+table.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table.calendar th, table.calendar td {
+  padding: 10px;
+  border: 1px solid #522707;
+  text-align: center;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day button {
+  margin-top: 4px;
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+  background-color: #f7f4e6;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.day button.ng {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.day button:hover {
+  background-color: #FFB351;
+  transform: scale(1.05);
+}
+
+.day button.ng:hover {
+  background-color: #ccc;
+  transform: scale(1.05);
+}
+
+.dayday {
+  font-weight: bold;
+  background-color: #f7f4e6;
+  font-size: 16px;
+}
