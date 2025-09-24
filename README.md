@@ -59,7 +59,6 @@ project-root/
 - ハンバーガーメニューはモバイル時のみ表示
 
 ## 注意点
-- 画像は `images/` フォルダに格納する必要があります。
 - JavaScript が無効の場合、スライドショーやハンバーガーメニューは動作しません。
 - フォントは Google Fonts の LXGW Marker Gothic を使用しています。
 
